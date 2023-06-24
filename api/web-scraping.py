@@ -1,3 +1,4 @@
+# Fonte https://www.youtube.com/watch?v=HrGLX7JUVoQ
 # Importando as bibliotecas
 import requests
 import numpy as np
