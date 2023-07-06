@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 
-from web import my_method
+from web import get_WebScraping
 
 app = Flask(__name__)
 
@@ -9,7 +9,7 @@ def get_data():
     string_param = request.args.get('string_param')
 
     # Call the method and store the return value in a variable
-    result = my_method(string_param)
+    result = get_WebScraping(string_param)
     
     return jsonify(result)
 

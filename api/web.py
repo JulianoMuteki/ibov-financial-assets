@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup
 
-def my_method(ticker):
+def get_WebScraping(ticker):
     # URL com a tabela de dados
     url = f"https://www.fundamentus.com.br/proventos.php?papel={ticker}&tipo=2"
 
