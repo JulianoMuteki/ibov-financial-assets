@@ -20,3 +20,7 @@ Note: 'dataGranularity': '1h', 'range': '1wk', 'validRanges': ['1d', '5d', '1mo'
  - cd ibov-financial-assets/api-yahoo-market
  - docker build -t yfinance-api:v1 .
  - docker run --rm -p 5001:5001 --name yfinance-api yfinance-api:v1
+
+
+# Read more
+ - https://pypi.org/project/yfinance/
