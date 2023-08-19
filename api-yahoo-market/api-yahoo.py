@@ -8,11 +8,13 @@ app = Flask(__name__)
 
 @app.route('/history', methods=['GET'])
 def get_history():
-    dateFilter = request.args.get('dateFilter')
+    periodFilter = request.args.get('periodFilter')
+    intervalFilter = request.args.get('intervalFilter')
+
     ticker = request.args.get('ticker')
 
     # Call the method and store the return value in a variable
-    result = get_History(ticker, dateFilter)
+    result = get_History(ticker, periodFilter, intervalFilter)
     
     return result
 
