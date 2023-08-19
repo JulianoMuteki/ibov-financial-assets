@@ -16,8 +16,9 @@
 
 Note: 'dataGranularity': '1h', 'range': '1wk', 'validRanges': ['1d', '5d', '1mo', '3mo', '6mo', '1y', '2y', '5y', '10y', 'ytd', 'max']
 
-period: As seen before, especially useful is the value “max”. The following are the valid values: 1d,5d,1mo,3mo,6mo,1y,2y,5y,10y,ytd,max.
-interval: Defines the size of each bar. Smaller bar sizes have more strict limitations, and only 7 days of 1-minute data can be retrieved. The following are the valid values: 1m,2m,5m,15m,30m,60m,90m,1h,1d,5d,1wk,1mo,3mo
+- period: As seen before, especially useful is the value “max”. The following are the valid values: 1d,5d,1mo,3mo,6mo,1y,2y,5y,10y,ytd,max.
+- interval: Defines the size of each bar. Smaller bar sizes have more strict limitations, and only 7 days of 1-minute data can be retrieved. The following are the valid
+- values: 1m,2m,5m,15m,30m,60m,90m,1h,1d,5d,1wk,1mo,3mo
 
 ### Docker
  - cd ibov-financial-assets/api-yahoo-market
@@ -27,4 +28,3 @@ interval: Defines the size of each bar. Smaller bar sizes have more strict limit
 
 # Read more
  - https://pypi.org/project/yfinance/
- https://www.instagram.com/gottardpark/
