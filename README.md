@@ -9,10 +9,10 @@
 
 ## Web API yfinance lib
 
-### Testing
+### Testing with Python
 - python3 api-yahoo.py
-- curl http://127.0.0.1:5000/history?ticker=TAEE11.SA&periodFilter=6mo&intervalFilter=1mo
-- curl http://127.0.0.1:5000/info?ticker=TAEE11.SA
+- curl http://127.0.0.1:5001/history?ticker=TAEE11.SA&periodFilter=6mo&intervalFilter=1mo
+- curl http://127.0.0.1:5001/info?ticker=TAEE11.SA
 
 Note: 'dataGranularity': '1h', 'range': '1wk', 'validRanges': ['1d', '5d', '1mo', '3mo', '6mo', '1y', '2y', '5y', '10y', 'ytd', 'max']
 
@@ -25,6 +25,8 @@ Note: 'dataGranularity': '1h', 'range': '1wk', 'validRanges': ['1d', '5d', '1mo'
  - docker build -t yfinance-api:v1 .
  - docker run --rm -p 5001:5001 --name yfinance-api yfinance-api:v1
 
+### Testing API api-yahoo-market
+ - curl http://localhost:5001/info?ticker=TAEE11.SA
 
 # Read more
  - https://pypi.org/project/yfinance/
