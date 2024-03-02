@@ -1,11 +1,8 @@
-FROM python:3
-ENV PYTHONUNBUFFERED 1
+FROM python:3.8
 RUN mkdir /app
 WORKDIR /app
-COPY requirements.txt​ /app
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt​
-COPY . /app
+COPY . /app/
+RUN pip install -r /app/requirements.txt
 
 EXPOSE 5001
 CMD [ "python", "api-yahoo.py" ]
